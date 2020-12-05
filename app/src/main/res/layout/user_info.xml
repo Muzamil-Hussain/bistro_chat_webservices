@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle"
+        android:layout_margin="20dp"
+        android:id="@+id/dp_ui"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muzamil Hussain"
+        android:layout_below="@+id/dp_ui"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:id="@+id/username_ui"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="muzamilsethar@gmail.com"
+        android:layout_below="@+id/username_ui"
+        android:id="@+id/email_ui"
+        android:textSize="18sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

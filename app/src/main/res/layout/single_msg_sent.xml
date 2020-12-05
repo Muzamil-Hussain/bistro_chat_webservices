@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:id="@+id/sent_msg_rl"
+    android:layout_marginEnd="10dp"
+    tools:ignore="RtlHardcoded">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/delivered_msg"
+        android:id="@+id/msg_status"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignBottom="@id/msg_sent_ll"
+        android:layout_marginBottom="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/msg_sent_ll"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_msg_sent_last"
+            android:orientation="vertical"
+            android:id="@+id/sent_chat_msg_img_ll">
+            <ImageView
+                android:layout_width="329dp"
+                android:layout_height="200dp"
+                android:background="@drawable/filled_rectangle"
+                android:id="@+id/sent_chat_img"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginVertical="5dp"
+                android:layout_gravity="right"
+                android:padding="15dp"
+                android:id="@+id/msg_sent_text_chat"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sent_msg_time_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        </LinearLayout>
+</RelativeLayout>
